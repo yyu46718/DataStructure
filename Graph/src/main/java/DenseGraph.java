@@ -1,6 +1,7 @@
 import java.util.Vector;
+import javax.sound.midi.Soundbank;
 
-public class DenseGraph {
+public class DenseGraph implements Graph{
   private int n; //num of vertices
   private int m; //num of edges
   private boolean isDirected;
@@ -52,5 +53,18 @@ public class DenseGraph {
     }
     return adjV;
   }
+
+  /**
+   * print a matrix representing the graph
+   */
+  public void show(){
+    for(int i = 0; i < n; i++){
+      for(int j = 0; j < n; j++){
+        System.out.print(g[i][j] + "\t");
+      }
+      System.out.println();
+    }
+  }
+
 
 }

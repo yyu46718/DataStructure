@@ -1,6 +1,6 @@
 import java.util.Vector;
 
-public class SparseGraph {
+public class SparseGraph implements Graph {
   private int n; //nodes or vertex
   private int m; //edge
   private boolean isDirected;
@@ -51,6 +51,16 @@ public class SparseGraph {
     public Iterable<Integer> adj(int v){
       assert v >= 0 && v < n;
       return g[v];
+  }
+
+  public void show(){
+    for(int i = 0; i < n ; i++){
+      System.out.print("vertex" + i +":\t");
+      for(int j = 0; j < g[i].size(); j++){
+        System.out.print(g[i].elementAt(j)+ "\t");
+      }
+      System.out.println();
+    }
   }
 
 }
