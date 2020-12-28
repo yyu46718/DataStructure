@@ -1,0 +1,12 @@
+rootProject.name = 'Data_Structures'
+include 'LinkedList'
+include 'Array'
+include 'BST'
+include 'Set'
+include 'Map'
+include 'Heap'
+include 'Trie'
+include 'UnionFind'
+include 'AVLTree'
+include 'HashTable'
+
